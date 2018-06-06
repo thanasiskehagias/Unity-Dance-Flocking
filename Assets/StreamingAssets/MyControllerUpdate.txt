@@ -1,0 +1,21 @@
+/*
+DroneParams.neighborRadius  =100.0f*(3.0f+Mathf.Sin(0.200f*Time.time));
+DroneParams.separationWeight=3.50f*(1.0f+Mathf.Sin(0.120f*Time.time));
+DroneParams.alignmentWeight =3.50f*(1.0f+Mathf.Sin(0.160f*Time.time));
+DroneParams.cohesionWeight  =4.20f*(0.0f+Mathf.Sin(0.240f*Time.time)+0.20f);
+*/
+DroneParams.neighborRadius  =100f;
+DroneParams.separationWeight=3f;
+DroneParams.alignmentWeight =3f;
+DroneParams.cohesionWeight  =4f;
+
+Light00PointLight.intensity=600f; 
+Light00PointLight.intensity=2*min(5.0,Time.time/10.0); 
+//Light01PointLight.intensity=min(5.0,Time.time/30.0); 
+//Light02PointLight.intensity=min(5.0,Time.time/30.0); 
+//Light03PointLight.intensity=min(5.0,Time.time/30.0); 
+//Light04PointLight.intensity=min(5.0,Time.time/30.0); 
+if(Time.time>MusicLength-20)  				Light00PointLight.intensity=5*(MusicLength-Time.time)/20;
+if(Time.time>Mathf.Max(20,MusicLength)) 	Music.SetActive(false);
+if(Time.time>Mathf.Max(20,MusicLength+5)) 	Application.Quit();
+ 
