@@ -3,7 +3,7 @@ Unity3d project with flocking (ala Boids) dancers. Tested with Unity 2017.3.f3 o
 
 The user can choose *script* the dancers *at runtime* to adjust their flocking behavior (read 20180609UnityDanceFlocking.pdf).
 
-Watch video at https://www.youtube.com/watch?v=zzvl5iDbsfk&feature=youtu.be .
+Watch video at https://youtu.be/zzvl5iDbsfk .
 
 ![Image](../master/DanceFlockingScreenShot.jpg?raw=true)
 
